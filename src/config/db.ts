@@ -6,3 +6,4 @@ const connectToMongoDB = async() => {
     config()
     await connect(process.env.MONGODB_CONNECT_URL ?? 'mongodb://localhost/candles')
 }
+export default connectToMongoDB;
